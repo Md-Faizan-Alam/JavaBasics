@@ -1,4 +1,4 @@
-package com.training.cg;
+package com.training.cg.misc;
 
 public class FilterNum {
 	public static void main(String[] args) {

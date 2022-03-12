@@ -1,11 +1,12 @@
-package com.training.cg;
+package com.training.cg.product;
 
 public class Product {
 	private String prodId;
 	private String prodName;
 	private String prodDesc;
-	private String price;
+	private int price;
 	
+	// Setters
 	public void setProdId(String prodId) {
 		this.prodId = prodId;
 	}
@@ -15,9 +16,11 @@ public class Product {
 	public void setProdDesc(String prodDesc) {
 		this.prodDesc = prodDesc;
 	}
-	public void setPrice(String price) {
+	public void setPrice(int price) {
 		this.price = price;
 	}
+	
+	//Getters
 	public String getProdId() {
 		return this.prodId;
 	}
@@ -27,7 +30,16 @@ public class Product {
 	public String getProdDesc() {
 		return this.prodDesc;
 	}
-	public String getPrice() {
+	public int getPrice() {
 		return this.price;
 	}
+	
+	//Printing Details
+	public void getInfo() {
+		System.out.println("Product Name : "+this.getProdName());
+		System.out.println("Product ID : "+this.getProdId());
+		System.out.println("Product Description : "+this.getProdDesc());
+		System.out.println("Price : "+this.getPrice());
+	}
+	
 }

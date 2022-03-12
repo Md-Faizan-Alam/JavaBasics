@@ -1,23 +1,14 @@
-package com.training.cg;
+package com.training.cg.bank;
 
+// This class must have implementations of every method mentioned in the Interface that it implements
 public class AccountType implements Account{
-	private double initialBalance;
-	private double totalBalance = initialBalance;
-	private boolean firstDeposit = true;
-
-	public double getTotalBalance() {
-		return totalBalance;
-	}
+	String accountHolder;
+	double initialBalance;
+	private double totalBalance;
+	
 	@Override
 	public void deposit(double amount) {
-		if(firstDeposit) {
-			initialBalance = amount;
-			totalBalance = amount;
-			firstDeposit = false;
-		}
-		else {
 			totalBalance += amount;
-		}
 	}
 
 	@Override
