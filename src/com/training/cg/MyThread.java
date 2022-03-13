@@ -1,5 +1,8 @@
 package com.training.cg;
 
+/*	This can also be done by extending the 'Thread' class,
+	the only difference in that case being that we don't have to Override
+	the 'run' method */
 public class MyThread implements Runnable {
 	Thread t;
 	String threadName;
