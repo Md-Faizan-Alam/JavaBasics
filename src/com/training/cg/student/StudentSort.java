@@ -12,35 +12,36 @@ public class StudentSort {
 		Student stud4 = new Student("David", "STB04", "david@gmail.com");
 		Student stud5 = new Student("Emily", "STB05", "emily@gmail.com");
 		
-//		try {
-//			stud1.setGrade();
-//		} catch (Exception e) {
-//			System.out.println(e.getMessage());
-//		}
+		try {
+			stud1.setGrade();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 		
-//		try {
-//			stud2.setGrade();
-//		} catch (Exception e) {
-//			System.out.println(e.getMessage());
-//		}
-//		
-//		try {
-//			stud3.setGrade();
-//		} catch (Exception e) {
-//			System.out.println(e.getMessage());
-//		}
-//		
-//		try {
-//			stud4.setGrade();
-//		} catch (Exception e) {
-//			System.out.println(e.getMessage());
-//		}
-//		
-//		try {
-//			stud5.setGrade();
-//		} catch (Exception e) {
-//			System.out.println(e.getMessage());
-//		}
+		try {
+			stud2.setGrade();
+		} catch (Exception e) {
+//			e.printStackTrace();
+			System.out.println(e.getMessage());
+		}
+		
+		try {
+			stud3.setGrade();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
+		try {
+			stud4.setGrade();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
+		try {
+			stud5.setGrade();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 		
 		List<Student> allStudents = new LinkedList<Student>();
 		

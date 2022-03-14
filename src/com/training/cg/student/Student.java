@@ -19,7 +19,7 @@ public class Student {
 		System.out.print("Enter the grade for "+this.studName+" : ");
 		Scanner sc = new Scanner(System.in);
 		this.grade = sc.next().charAt(0);
-		sc.close();
+		// sc.close();     Should be used at the very end
 		for(char c:possibleValues) {
 			if(this.grade == c) {
 				return;
