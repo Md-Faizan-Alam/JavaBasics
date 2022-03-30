@@ -15,6 +15,7 @@ public class Student {
 		this.studMailId = studMailId;
 	}
 	
+	@SuppressWarnings("resource")
 	public void setGrade() throws Exception {
 		System.out.print("Enter the grade for "+this.studName+" : ");
 		Scanner sc = new Scanner(System.in);

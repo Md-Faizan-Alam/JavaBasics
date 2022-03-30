@@ -1,7 +1,9 @@
 package com.training.cg.animal;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
@@ -52,7 +54,7 @@ public class CollectionDemo {
 		System.out.println();
 		
 		// Instantiating a Map
-		Map<String,String> myMap = new HashMap<String,String>();
+		Map<String,String> myMap = new HashMap<>();
 		
 		myMap.put("A","Alpha");
 		myMap.put("B","Bravo");
@@ -89,6 +91,11 @@ public class CollectionDemo {
 		}
 		/*	The duplicates are not repeated because the 'equals()' and 'hashCode()'
 			methods have been overriden for the class Cat */
+		
+		List<Integer> list = new ArrayList<>();
+		
+		
+		list.get(0);
 		
 	}
 }

@@ -1,6 +1,7 @@
 package com.training.cg.misc;
 
 public class StringDemo {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		String str1 = "example";
 		String str2 = "example";

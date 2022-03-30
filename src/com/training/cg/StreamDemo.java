@@ -1,18 +1,26 @@
 package com.training.cg;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+@SuppressWarnings("unused")
 public class StreamDemo {
 	public static void main(String [] args) {
 		List<String> allStrings = Arrays.asList("Anthony","Bruce","","Charlie","","David");
 		
 		//	Creating a Stream object of the 'allStrings' List
 		Stream<String> strStream = allStrings.stream();
+		List<Double> doubles = new ArrayList<>();
 		
+		char c ='a';
+		String str = String.valueOf(c);
+		
+		Long l = (long)500;
+		Double d = (double)l;
 		//	Finding out the number of empty strings
 		/*	The filter method takes a Predicate function as parameter and
 			filters out the elements that return false */
@@ -43,9 +51,9 @@ public class StreamDemo {
 			operates on the value stored in the object of Optional class if it is not null */
 		/*	'System.out::println' is equivalent to
 			the Consumer 'value -> System.out.println(value)' */
-//		Optional<String> newString = strStream.reduce((str1,str2)->str1+","+str2);
+		Optional<String> newString = strStream.reduce((str1,str2)->str1+","+str2);
 //		newString.ifPresent(System.out::println);
-		
+		String str1 = newString.orElse("");
 		
 		
 	}

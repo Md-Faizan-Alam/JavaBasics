@@ -14,7 +14,7 @@ public class Dog extends Animal{
 	
 	//Same method name also requires to have same return type, or else we will get an error
 	@Override
-	public String getInfo() {
+	public String getInfo(){
 		return name+" is a "+age+" years old "+breed;
 	}
 	

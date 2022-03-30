@@ -12,6 +12,7 @@ import java.io.*;
 public class FileDemo {
 	public static void main(String[] args) throws IOException{
 		// Instantiating a File object
+		@SuppressWarnings("unused")
 		File file = new File("Letter.txt");
 		
 		
@@ -74,6 +75,21 @@ public class FileDemo {
 //		finally {
 //			bw.close();
 //		}
+		
+		// Writing in a file using only FileWriter
+		
+//		FileWriter fw = new FileWriter(file);
+//		String str = "This string is added to this file";
+//		char[] arr = str.toCharArray();
+//		
+//		try {
+//			fw.write(arr);
+//		}catch(Exception e) {
+//			e.printStackTrace();
+//		}finally {
+//			fw.close();
+//		}
+		
 		
 		
 		// Deleting a file
