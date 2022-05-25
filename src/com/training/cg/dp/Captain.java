@@ -1,6 +1,6 @@
 package com.training.cg.dp;
 
-// Creating a Singleton Class named 'Captian'
+// Creating a Singleton Class named 'Captain'
 public class Captain {
 	private static Captain obj;
 	

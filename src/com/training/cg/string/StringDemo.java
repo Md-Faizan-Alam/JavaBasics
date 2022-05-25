@@ -1,4 +1,4 @@
-package com.training.cg.misc;
+package com.training.cg.string;
 
 public class StringDemo {
 	@SuppressWarnings("unused")
@@ -10,10 +10,10 @@ public class StringDemo {
 		String str4 = new String("example");
 		
 		// Demonstration of how String object is different from literal String
-		System.out.println(str1 == str2);
-		System.out.println(str3 == str4);
-		System.out.println(str1.equals(str2));
-		System.out.println(str3.equals(str4));
+		System.out.println(str1 == str2);			//true
+		System.out.println(str3 == str4);			//false
+		System.out.println(str1.equals(str2));		//true
+		System.out.println(str3.equals(str4));		//true
 		
 		System.out.println();
 		

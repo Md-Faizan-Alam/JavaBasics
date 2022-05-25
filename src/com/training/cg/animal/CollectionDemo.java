@@ -39,7 +39,7 @@ public class CollectionDemo {
 		
 		System.out.println();
 
-		/*	A HashSet does not iterate in the order in whoch elements were added
+		/*	A HashSet does not iterate in the order in which elements were added
 			but it does not sort the elements either.*/
 		
 		allIntegers.add(5);
@@ -94,9 +94,9 @@ public class CollectionDemo {
 		
 		List<Integer> list = new ArrayList<>();
 		
+		list.add(3);
 		
-		list.get(0);
-		
+		System.out.println(list.get(0));		
 	}
 }
 
